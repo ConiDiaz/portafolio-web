@@ -625,7 +625,7 @@ body,
 }
 
 .profile-right .services li { /* item servicio */
-  font-size: 13px; /* pequeño */
+  font-size: 20px; /* pequeño */
   color: #F1F1F1; /* claro */
 }
 
@@ -639,7 +639,7 @@ body,
 
 .contact-left .section-title { /* título contacto */
   font-size: 44px; /* grande */
-  margin: 0 0 12px /* margen inf */
+  margin: 0 0 12px /* margen info */
 }
 
 .contact-lead { /* texto contacto */
