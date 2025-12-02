@@ -13,8 +13,8 @@ html, body, #root {
   padding: 0; /* Quitar padding predeterminado */
 }
 
-/* Cursor personalizado - punto rosa */
-* {
+/* Cursor personalizado  punto rosa */
+html, body {
   cursor: none; /* Ocultar cursor predeterminado */
 }
 
@@ -26,7 +26,7 @@ body {
   position: fixed;
   width: 20px;
   height: 20px;
-  background: #F6B8CB; /* Rosa más suave */
+  background: #F6B8CB; /* Rosa  */
   border-radius: 50%;
   pointer-events: none;
   z-index: 9999;
@@ -42,7 +42,7 @@ body {
 }
 
 /* Header */
-.site-header { }
+.site-header 
 
 .main-nav a { 
   margin-right: 10px;
@@ -168,6 +168,24 @@ body {
 .main-nav a:hover {
   font-weight: 700; /* Semi-negrita al pasar el mouse */
 }
+
+/* Eliminar colores y líneas por defecto en todos los enlaces (se puso morado) */
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+a:visited,
+a:active,
+a:focus,
+a:hover {
+  color: inherit !important;
+  text-decoration: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
 
 .menu-toggle {
   display: none; /* Oculto en desktop */
@@ -406,7 +424,7 @@ body {
   margin: 18px 0; /* Margen vertical */
 }
 
-/* Título genérico */
+/* Título */
 .page-title {
   font-weight: 900; /* Negrita fuerte */
 }
@@ -541,7 +559,9 @@ body {
 }
 
 .detail-header .subtitle {
-  font-size: 20px;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
   color: #F1F1F1;
   margin: 0; /*  Sin margen  */
 }
@@ -551,7 +571,7 @@ body {
 }
 
 .detail-content .description {
-  font-size: 15px; /* Tamaño */
+  font-size: 20px; /* Tamaño */
   line-height: 1.6; /* Interlineado */ 
   color: #F1F1F1; /* Texto claro */
   max-width: 700px; /* Ancho máximo */
@@ -950,3 +970,4 @@ body {
     gap: 10px; /* espacio mínimo */
   }
 }
+

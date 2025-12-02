@@ -11,34 +11,33 @@ import Footer from './components/Footer';
 
 function App() {
   useEffect(() => {
-    // Crear cursor personalizado
-    const cursor = document.createElement('div');
-    cursor.className = 'custom-cursor';
-    document.body.appendChild(cursor);
+    const cursor = document.createElement('div'); 
+    cursor.className = 'custom-cursor'; 
+    document.body.appendChild(cursor); 
+   
     
-    // Seguir el mouse
     const moveCursor = (e) => {
-      cursor.style.left = e.clientX + 'px';
-      cursor.style.top = e.clientY + 'px';
+      cursor.style.left = e.clientX + 'px'; 
+      cursor.style.top = e.clientY + 'px'; 
     };
     
-    // Detectar elementos hover
+
     const handleMouseOver = (e) => {
-      const target = e.target;
+      const target = e.target; 
       
-      // Agranda cursor sobre elementos interactivos
+
       if (
         target.tagName === 'A' || 
-        target.tagName === 'BUTTON' ||
-        target.closest('.filters span') ||
-        target.closest('.project-card') ||
-        target.closest('.featured-project') ||
-        target.closest('.menu-toggle') ||
-        target.closest('.see-all') ||
-        target.closest('.contact-links a') ||
-        target.closest('.contact-links div')
+        target.tagName === 'BUTTON' || 
+        target.closest('.filters span') || 
+        target.closest('.project-card') || 
+        target.closest('.featured-project') || 
+        target.closest('.menu-toggle') || 
+        target.closest('.see-all') || 
+        target.closest('.contact-links a') || 
+        target.closest('.contact-links div') 
       ) {
-        cursor.classList.add('large');
+        cursor.classList.add('large'); 
       }
     };
     
@@ -46,15 +45,15 @@ function App() {
       cursor.classList.remove('large');
     };
     
-    document.addEventListener('mousemove', moveCursor);
-    document.addEventListener('mouseover', handleMouseOver);
-    document.addEventListener('mouseout', handleMouseOut);
+    document.addEventListener('mousemove', moveCursor); 
+    document.addEventListener('mouseover', handleMouseOver); 
+    document.addEventListener('mouseout', handleMouseOut); 
     
     return () => {
       cursor.remove();
-      document.removeEventListener('mousemove', moveCursor);
-      document.removeEventListener('mouseover', handleMouseOver);
-      document.removeEventListener('mouseout', handleMouseOut);
+      document.removeEventListener('mousemove', moveCursor); 
+      document.removeEventListener('mouseover', handleMouseOver); 
+      document.removeEventListener('mouseout', handleMouseOut); 
     };
   }, []);
 

@@ -4,9 +4,9 @@ import FeaturedProject from './FeaturedProject';
 
 export default function Home() {
   const featured = [
-    { id: 1, title: 'LAFKEN', subtitle: 'Creación de una cerveza chilena.', img: '/Imagenes/lafken/LAFKEN%201.1.png' },
-    { id: 5, title: 'THANATOS', subtitle: 'Fotolibro sobre abandono y memoria.', img: '/Imagenes/thanatos/Thanatos%201.png' },
-    { id: 3, title: 'MINDLY', subtitle: 'Aplicación de journaling.', img: '/Imagenes/mindly/Mindly%201.png' }
+    { id: 1, title: 'LAFKEN', subtitle: 'Creación de una cerveza chilena', img: '/Imagenes/lafken/LAFKEN%201.1.png' },
+    { id: 5, title: 'THANATOS', subtitle: 'Fotolibro sobre abandono y memoria', img: '/Imagenes/thanatos/Thanatos%201.png' },
+    { id: 3, title: 'MINDLY', subtitle: 'Aplicación de journaling', img: '/Imagenes/mindly/Mindly%201.png' }
   ];
 
   return (

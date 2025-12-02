@@ -3,11 +3,11 @@ import { Link } from 'react-router-dom';
 import ProjectCard from './ProjectCard';
 
 const all = [
-  { id: 1, title: 'LAFKEN', subtitle: 'Creación de una cerveza chilena.', img: '/Imagenes/lafken/LAFKEN%201.png', categories: ['GRÁFICO', 'IDENTIDAD'] },
-  { id: 6, title: 'MANOS DEL PASADO', subtitle: 'Afiches feria Centro cultural Mapocho.', img: '/Imagenes/manosdelpasado/Manos%20del%20pasado%201.png', categories: ['GRÁFICO'] },
-  { id: 3, title: 'MINDLY', subtitle: 'Aplicación de journaling.', img: '/Imagenes/mindly/Mindly%201.png', categories: ['GRÁFICO', 'DIGITAL'] },
-  { id: 2, title: 'SILOS', subtitle: 'Creación de tipografía.', img: '/Imagenes/silos/Silos%201.png', categories: ['GRÁFICO', 'DIGITAL'] },
-  { id: 5, title: 'THANATOS', subtitle: 'Fotolibro sobre abandono y memoria.', img: '/Imagenes/thanatos/Thanatos%201.png', categories: ['EDITORIAL'] }
+  { id: 1, title: 'LAFKEN', subtitle: 'Creación de una cerveza chilena', img: '/Imagenes/lafken/LAFKEN%201.png', categories: ['GRÁFICO', 'IDENTIDAD'] },
+  { id: 6, title: 'MANOS DEL PASADO', subtitle: 'Afiches feria Centro cultural Mapocho', img: '/Imagenes/manosdelpasado/Manos%20del%20pasado%201.png', categories: ['GRÁFICO'] },
+  { id: 3, title: 'MINDLY', subtitle: 'Aplicación de journaling', img: '/Imagenes/mindly/Mindly%201.png', categories: ['GRÁFICO', 'DIGITAL'] },
+  { id: 2, title: 'SILOS', subtitle: 'Creación de tipografía', img: '/Imagenes/silos/Silos%201.png', categories: ['GRÁFICO', 'DIGITAL'] },
+  { id: 5, title: 'THANATOS', subtitle: 'Fotolibro sobre abandono y memoria', img: '/Imagenes/thanatos/Thanatos%201.png', categories: ['EDITORIAL'] }
 ];
 
 export default function Projects() {

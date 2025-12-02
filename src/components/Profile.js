@@ -10,7 +10,7 @@ export default function Profile() {
         </header>
 
         <div className="profile-photo-wrap">
-          <img src="/Imagenes/perfil/image.png" alt="Constanza Díaz" className="profile-photo" />
+          <img src="/Imagenes/perfil/image.jpg" alt="Constanza Díaz" className="profile-photo" />
         </div>
 
         <div className="profile-grid">
@@ -33,7 +33,7 @@ export default function Profile() {
         <div className="profile-contact-grid">
           <div className="contact-left">
             <h2 className="section-title">CREACIÓN</h2>
-            <p className="contact-lead">Transformamos ideas en experiencias visuales únicas, donde cada detalle refleja creatividad, intención y la esencia de tu proyecto</p>
+            <p className="contact-lead">Transformamos ideas en experiencias visuales únicas, donde cada detalle refleja creatividad, intención y la esencia de tu proyecto.</p>
           </div>
         </div>
       </div>
