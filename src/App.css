@@ -13,6 +13,113 @@ html, body, #root {
   padding: 0; /* Quitar padding predeterminado */
 }
 
+/* Cursor personalizado - punto rosa */
+* {
+  cursor: none; /* Ocultar cursor predeterminado */
+}
+
+body {
+  cursor: none;
+}
+
+.custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: #F6B8CB; /* Rosa más suave */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+.custom-cursor.large {
+  width: 25px; /* Cursor solo un poco más grande */
+  height: 25px;
+  opacity: 0.6; /* Más transparente al hover */
+}
+
+/* Header */
+.site-header { }
+
+.main-nav a { 
+  margin-right: 10px;
+  transition: color 0.3s ease, font-weight 0.2s, text-shadow 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #F6B8CB; /* Rosa al hover */
+  text-shadow: 0 0 10px #F6B8CB; /* Brillo reducido */
+}
+
+.main-nav a.active {
+  font-weight: 900;
+}
+
+.main-nav a.active:hover {
+  color: #F6B8CB; /* Rosa cuando está activo y hover */
+  text-shadow: 0 0 10px #F6B8CB; /* Brillo reducido */
+}
+
+.menu-toggle { 
+  cursor: pointer;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.menu-toggle:hover {
+  color: #F6B8CB;
+  text-shadow: 0 0 5px #F6B8CB; /* Brillo reducido */
+}
+
+/* Filtros de proyectos */
+.filters span {
+  transition: color 0.3s ease, font-weight 0.2s, text-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.filters span:hover {
+  color: #F6B8CB; /* Rosa al hover */
+  text-shadow: 0 0 5px #F6B8CB; /* Brillo r */
+}
+
+.see-all {
+  transition: none; /* Sin brillo*/
+}
+
+.project-card,
+.featured-project {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover,
+.featured-project:hover {
+  transform: scale(1.02); /* Solo zoom, sin color rosar */
+}
+
+.project-card h3, .featured-project h3 {
+  transition: none; /* Sin transiciones */
+}
+
+/* Contact links  de al centro me permite agrandar cuando se hace click */
+.contact-links {
+  display: flex; /* Mantener flex */
+  flex-direction: column; /* Vertical */
+  gap: 12px; /* Espacio */
+  align-items: flex-start; /* Alinear a la izquierda */
+}
+
+.contact-links a, .contact-links div {
+  transition: transform 0.3s ease; /* Transición suave */
+  display: inline-block;
+  transform-origin: left center; /* Crece desde la izquierda que es donde esta el texto */
+}
+
+.contact-links a:hover, .contact-links div:hover {
+  transform: scale(1.05); /* Agranda desde el origen osea el centro */
+}
+
 /* Header */
 .site-header {
   background: #211E21; /* Fondo oscuro */
