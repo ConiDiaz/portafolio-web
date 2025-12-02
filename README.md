@@ -1,1 +1,1 @@
-Tarea solemne 3 https://www.figma.com/design/Ob129DP9bGMKFL4XGI7Q5k/Portafolio?node-id=0-1&p=f&t=TvmqkDtt0r0lKIkZ-0 
+https://www.notion.so/SOLEMNE-3-2a1c9599d12a80368a45e63bbd1ab15e#2a1c9599d12a80f9a11ff511e8fa86a8
